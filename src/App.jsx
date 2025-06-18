@@ -6,8 +6,10 @@ import Header from './components/header'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import {BrowserRouter,Routes,Route } from 'react-router-dom'
-
 import Login from './components/Login'
+import Contact from './components/Contact'
+import Services from './components/Services'
+import About from './components/About'
 function App() { 
   return(
     <>
@@ -17,6 +19,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Login" element={<Login />} />
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/Services" element={<Services/>}/>
+      <Route path="/About" element={<About/>}/>
+
     </Routes>
     <Footer/>
     </BrowserRouter>
